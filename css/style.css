@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 700px;
+    height: calc(100vh - 100px);
+    padding: 0 100px 80px 100px;
+    color: white;
+    background-color: #000;
+    border-radius: 50px;
+}
+
+.display {
+    text-align: right;
+    padding: 0px 0 0px 0;
+    margin: 100px 8px 0 0;
+    font-weight: bold;
+    background-color: transparent;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.digit-display {
+    margin: 5px 0;
+}
+
+.small-font {
+    font-size: 15px;
+}
+
+.large-font {
+    font-size: 35px;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: flex-start;
+    padding: 10px;
+    margin: auto;
+}
+
+.buttons-group {
+    display: grid;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.left {
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.right {
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    margin-left: 10px;
+}
+
+button {
+    background-color: #555;
+    color: white;
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    font-size: 15px;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+button:active {
+    background-color: #999;
+}
+
+.harsh_color {
+    background-color: #525254;
+    color: #fff;
+}
+
+.yellow_color {
+    background-color: #FD940B;
+    color: #fff;
+}
+
+.dark_color {
+    background-color: #242426;
+    color: #fff;
+}
+
+.buttons-container .left button {
+    background-color: #1A1A1A;
+    color: #fff;
+}
+
+.buttons-container .left button:hover {
+    background-color: #777;
+    color: #fff;
+}
+
+.line {
+    display: block;
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    background-color: #fff;
+    width: 20%;
+    margin: 20px auto;
+}
+
